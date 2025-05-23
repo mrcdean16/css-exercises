@@ -20,6 +20,11 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display:flex;
+  /* 1: the below creates a gap between flex items horizontally (the ICON and the CONTAINER */
+  gap: 16px;
+  /* 2: the below creates padding around the entire modal (which is basically our entire view */
+  padding: 16px;
 }
 
 .icon {
@@ -33,6 +38,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* 3: the below stops the icon from shrinking regardless of the page/window size */
+  flex-shrink: 0; 
 }
 
 .close-button {
@@ -48,6 +55,25 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+}
+
+.header {
+  /* 4: the below takes the header (WHICH WE CHANGED IN THE HTML TO INCLUDE THE BUTTON) and displays its items as flex; left to right */
+  display: flex;
+  /* 5: the below takes the header and aligns it VERTICALLY in its container */
+  align-items: center;
+  /* 6: the below takes the header and pushes the 2 items to the edges ( OF THEIR CONTAINER) with space between */
+  justify-content: space-between;
+  /* 7: the two lines below changes the font size and weight of the header text */
+  font-size: 18px;
+  font-weight: 700;
+  /* 8: Creates a margin at the bottom of header container */
+  margin-bottom: 8px;
+}
+
+.text {
+  /* 9: Creates a margin at the bottom of the text container */
+  margin-bottom: 16px;
 }
 
 button {
