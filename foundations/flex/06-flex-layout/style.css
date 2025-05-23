@@ -1,18 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-.header {
+.header,
+.footer {
   display:flex;
   justify-content:space-between;
   padding:15px;
 }
 
 
-
-.left-links,
-.right-links{
-  display:flex; 
-  gap:18px;
-}
 
 .content {
   display:flex;
@@ -20,21 +15,21 @@
   align-items:center;
   justify-content: center;
   gap:16px;
+  /* maybe add below. odin's solution */
+  /* flex: 1; */
 }
 
 .footer {
   background-color:#eeeeee;
-  display:flex;
-  /* flex-direction:column; */
-  justify-content:space-between;
-  padding:15px;
 }
 
 ul {
   /* take bullet points out */
   list-style:none;
+  display:flex;
   margin:0;
   padding:0;
+  gap: 16px;
 }
 
 a {
@@ -48,11 +43,10 @@ body {
   overflow: hidden;
   font-family: Roboto, sans-serif;
   
-  /* probably delete these */
   display:flex;
   flex-direction:column;
+  /* maybe delete below line. my solution.*/
   justify-content:space-between;
-  /* probably delete these */
 }
 
 img {
